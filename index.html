@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+    <div id=header>
+    <div class="container">
+        <nav>
+          <img src="images/Portfolio.png" class="logo" >
+          <ul>
+            <li><a href="#">Home</a>
+             <li><a href="#">Projects</a></li>
+              <li><a href="#">Education</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+           
+            <h1>Hi, I'm <span>Sameera</span> <br>From India</h1>
+            <p>I'm a <span id="name"></span></p>
+            <button id="downloadResume"class="btn1">Download Resume</button>
+
+        </div>
+    </div>
+    </div>
+    
+    
+
+    <script>
+        var typed = new Typed('#name', 
+        {
+            strings: ['Web developer', 'coder','learner'],
+            typeSpeed: 50,
+        });
+        // JavaScript to handle the download
+        document.getElementById('downloadResume').addEventListener('click', function() {
+            // Create an anchor element dynamically
+            const link = document.createElement('a');
+            link.href = 'resume.pdf'; // Path to your resume PDF
+            link.download = 'Sameera_Resume'; // Name of the downloaded file
+            link.click(); // Programmatically trigger the click
+        });
+    </script>
+</body>
+</html>
+
+           
