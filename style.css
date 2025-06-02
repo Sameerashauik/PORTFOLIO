@@ -10,6 +10,14 @@
         color:#fff;
         background:black;   
         }
+ html {
+      scroll-behavior: smooth; /* Enables smooth scrolling */
+    }
+#Home
+{
+       background-color:black;
+}
+
         #header
        {
         width:100%;
